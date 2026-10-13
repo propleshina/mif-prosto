@@ -1,0 +1,23 @@
+p{
+   font-family: "Wavefont"; 
+}
+
+h1{
+font-family: "RetracM";
+}
+
+h2{
+font-family: "RetracM";
+font-weight: bold;
+}
+
+h3{
+font-family: "RetracM";
+font-style: italic;
+}
+
+h4{
+font-family: "RetracM";
+font-weight: bold;
+font-style: italic;
+}

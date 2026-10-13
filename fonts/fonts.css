@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Wavefont";
+    src: url(./WavefontBetaV001-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RetracM";
+    src: url(./RetracM-Roman.ttf) format("truetype");
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RetracM";
+    src: url(./RetracM-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RetracM";
+    src: url(./RetracM-Italic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RetracM";
+    src: url(./RetracM-BoldItalic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+}
