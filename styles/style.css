@@ -1,23 +1,53 @@
-p{
-   font-family: "Wavefont"; 
+header {
+  display: flex;
 }
 
-h1{
-font-family: "RetracM";
+.header {
+  font-family: "Wavefont";
 }
 
-h2{
-font-family: "RetracM";
-font-weight: bold;
+.logo {
+  height: 100px;
+  width: auto;
 }
 
-h3{
-font-family: "RetracM";
-font-style: italic;
+.social-media {
+  height: 65px;
+  width: auto;
 }
 
-h4{
-font-family: "RetracM";
-font-weight: bold;
-font-style: italic;
+.link {
+  text-decoration: none;
+}
+
+.link__country{
+       font-family: "RetracM";
+    font-weight: normal;
+}
+
+nav {
+  display: flex;
+}
+
+.img__search {
+  height: 30px;
+  width: auto;
+}
+
+.cover {
+}
+
+.cover__image{
+   filter: brightness(40%);
+}
+
+.cover__header{
+       font-family: "RetracM";
+    font-weight: bold;
+font-size: 80px;
+color:white;
+}
+
+.footer{
+   display: flex;
 }

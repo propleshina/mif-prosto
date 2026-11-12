@@ -4,15 +4,153 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>МифПросто - понятное и интересное </title>
+    <title>МифПросто - понятное и интересное</title>
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-<p>Пробный текст</p>
-<h1>Пробный текст</h1>
-<h2>Пробный текст</h2>
-<h3>Пробный текст</h3>
-<h4>Пробный текст</h4>
+    <header>
+      <a class="link" href="#">
+        <img class="logo" src="./images/mif-prosto-logo.png" alt="Логотип" />
+      </a>
+      <h1 class="header">MifProsto</h1>
+      <a class="link" href="#">
+        <img alt="Ссылка ВК" src="./images/vk.png" class="social-media" />
+      </a>
+      <a class="link" href="#">
+        <img
+          alt="Ссылка Телеграм"
+          src="./images/Telegram_Messenger.png"
+          class="social-media"
+        />
+      </a>
+      <a class="link" href="#">
+        <img
+          alt="Ссылка Инстраграм"
+          src="./images/inst.png"
+          class="social-media"
+        />
+      </a>
+    </header>
+    <nav>
+      <a class="link link__country"> Греция </a>
+      <a class="link link__country"> Древний Египет </a>
+      <a class="link link__country"> Скандинавия </a>
+      <a class="link link__country"> Япония </a>
+      <a class="link link__country"> Китай </a>
+      <p class="link__country">|</p>
+      <a class="link">
+        <img class="img__search" src="./images/search.png" />
+      </a>
+    </nav>
+    <main>
+      <section class="cover">
+      <img class="cover__image" src="./images/cover.jpg" />
+      <h2 class="cover__header">Мифы ближе, чем кажется</h2>
+   </section>
+   <section class="about">
+    <h2 class="about__header">О сайте</h2>
+    <p class="about__paragraph">МифПросто — это место, где вы можете узнать о самых разных мифах: от древних легенд до современных городских историй.</p>
+   </section>
+   <section class="last-articles">
+<ul class="last-articles__list">
+  <h2 class="last-articles__header">Последние статьи</h2>
+<li>
+<div>
+<img src="./images/article-amaterasu.png">
+<h4 class="last-articles__header">Аматэрасу</h4>
+<p class="last-articles__paragraph">верховная богиня солнца в японской мифологии</p>
+</div>
+</li>
+<li>
+  <div>
+  <img src="./images/article-persephone.png">
+<h4 class="last-articles__header">Персефона</h4>
+<p class="last-articles__paragraph">древнегреческая богиня плодородия</p>
+</div>
+</li>
+<li>
+  <div>
+  <img src="./images/article-ragnarok.jpg">
+<h4 class="last-articles__header">Рагнарёк</h4>
+<p class="last-articles__paragraph"> гибель богов и всего мира в германо-скандинавской мифологии</p>
+</div>
+</li>
+</ul>
+   </section>
+   <section class="courses">
+<div>
+<h2 class="courses__header">Записаться на курс</h2>
+<p class="courses__paragraph">Наши курсы подойдут всем, кто хочет узнать больше о мифах: от любопытных новичков до настоящих энтузиастов. У нас есть и детские курсы — в игровой форме!</p>
+</div>
+<div>
+  <ul class="courses__list">
+<li>
+  <img class="courses__image" src="./images/lecture-olympians.png">
+  <h3 class="courses__header">Олимпийские боги</h3>
+  <p class="courses__paragraph">Лекция о верховных божествах третьего поколения в древнегреческой мифологии, которые жили на священной горе Олимп</p>
+</li>
+<li>
+  <img class="courses__image" src="./images/lecture-yggdrasil.png">
+  <h3 class="courses__header">Иггдрасиль</h3>
+  <p class="courses__paragraph">Гигантский ясень из вселенной в скандинавской мифологии, какие тайны он хранит?</p>
+</li>
+<li>
+  <img class="courses__image" src="./images/lecture-yokai.png">
+  <h3 class="courses__header">Ёкаи</h3>
+  <p class="courses__paragraph">Духи из японской мифологии - как встретить их?</p>
+</li>
+  </ul>
+</div>
+<form class="form">
+          <fieldset class="form__fieldset">
+            <h2 class="form__fieldset-title">Ваши данные</h2>
+            <label class="form__label">
+              <input
+                type="text"
+                placeholder="Имя"
+                name="name"
+                class="search-form__textfield"
+              />
+            </label>
+                        <label class="form__label">
+              <input
+                type="text"
+                placeholder="Email"
+                name="email"
+                class="search-form__textfield"
+              />
+            </label>
+          </fieldset>
+        <button class="form__button">Записаться</button>  
+</form>
+   </section>
+    </main>
+    <footer class="footer">
+            <a class="link" href="#">
+        <img class="logo" src="./images/mif-prosto-logo.png" alt="Логотип" />
+      </a>
+      <h1 class="header">MifProsto</h1>
+      <p class="footer__line">|</p>
+      <p class="footer__text">Мифы. История. Знания.</p>
+      <a class="link" href="#">
+        <img alt="Ссылка ВК" src="./images/vk.png" class="social-media" />
+      </a>
+      <a class="link" href="#">
+        <img
+          alt="Ссылка Телеграм"
+          src="./images/Telegram_Messenger.png"
+          class="social-media"
+        />
+      </a>
+      <a class="link" href="#">
+        <img
+          alt="Ссылка Инстраграм"
+          src="./images/inst.png"
+          class="social-media"
+        />
+      </a>
+    </footer>
   </body>
+</html>
