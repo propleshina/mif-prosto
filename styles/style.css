@@ -1,28 +1,68 @@
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  border-bottom: 3px solid #3c2d44;
 }
 
 .header {
   font-family: "Wavefont";
+  color: #3c2d44;
+  font-size: 65px;
 }
 
 .logo {
-  height: 100px;
+  height: 125px;
   width: auto;
+  padding-left: 25px;
+}
+
+.logo-link:hover .logo {
+  content: url("../images/mif-prosto-logo-light.png");
+}
+
+.social-medias {
+  display: flex;
+  gap: 20px;
+  padding-right: 25px;
 }
 
 .social-media {
-  height: 65px;
+  height: 55px;
   width: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 35px;
+  padding: 25px 15px;
+  margin-left: 35px;
 }
 
 .link {
   text-decoration: none;
 }
 
-.link__country{
-       font-family: "RetracM";
-    font-weight: normal;
+.link__country {
+  font-family: "HirroSans";
+  font-size: 25px;
+  color: #3c2d44;
+}
+
+.link__country:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 nav {
@@ -30,24 +70,357 @@ nav {
 }
 
 .img__search {
-  height: 30px;
+  height: 40px;
   width: auto;
+  margin-right: 50px;
 }
 
 .cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
-.cover__image{
-   filter: brightness(40%);
+.layout {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(24, 13, 28, 0.8);
 }
 
-.cover__header{
-       font-family: "RetracM";
-    font-weight: bold;
-font-size: 80px;
-color:white;
+.cover__header {
+  font-family: "HirroSans";
+  font-weight: bold;
+  font-size: 70px;
+  color: white;
+  position: relative;
+  padding: 165px 50px 50px;
+  z-index: 1;
+  margin: 0;
+  color: #f7f0ea;
 }
 
-.footer{
-   display: flex;
+.accent-span {
+  font-style: italic;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+  align-items: center;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about__header {
+  color: #3c2d44;
+  font-family: "HirroSans";
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.about__paragraph {
+  color: #3c2d44;
+  font-family: "HirroSans";
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.accent-span-about {
+  font-weight: bold;
+}
+
+.icon-column {
+  height: 300px;
+  width: auto;
+}
+
+.last-articles__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0 15px;
+}
+
+.last-articles__header {
+  color: #3c2d44;
+  font-family: "HirroSans";
+  padding-top: 30px;
+  font-size: 60px;
+  padding-left: 50px;
+}
+
+.last-article__header {
+  color: #f7f0ea;
+  font-family: "HirroSans";
+  font-size: 51px;
+  font-weight: bold;
+}
+
+.articles__list {
+  width: 100%;
+  min-width: 0;
+  min-height: 300px;
+}
+
+.articles-list {
+  display: block;
+  margin: 30px 10px;
+}
+
+.article-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 596px;
+  box-sizing: border-box;
+  padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.last-articles__paragraph {
+  font-family: "HirroSans";
+  font-size: 25px;
+  line-height: 120%;
+  color: #f7f0ea;
+}
+
+.last-articles__paragraph,
+.last-articles__header,
+.last-article__header {
+  position: relative;
+  z-index: 1;
+}
+
+.article-japan {
+  background-image: url(../images/article-amaterasu.png);
+}
+
+.article-greece {
+  background-image: url(../images/article-persephone.png);
+}
+
+.article-viking {
+  background-image: url(../images/article-ragnarok.jpg);
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #3c2d44;
+  border-radius: 5%;
+}
+
+.courses-box {
+  width: 100%;
+}
+
+.courses__header {
+  font-family: "HirroSans";
+  font-weight: bold;
+  font-size: 40px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  color: #f7f0ea;
+  text-align: center;
+}
+
+.courses__paragraph {
+  font-family: "HirroSans";
+  font-size: 25px;
+  padding-left: 50px;
+  margin: 0 0 25px;
+  color: #f7f0ea;
+  line-height: 1.2;
+}
+
+.cources__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 30px auto 45px;
+  list-style: none;
+}
+
+.cources__list-item {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+.card__cource {
+  display: block;
+  text-decoration: none;
+}
+
+.card-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 300px;
+  padding: 30px 20px;
+  background-color: #f7f0ea;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.courses_header {
+  font-family: "HirroSans";
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3c2d44;
+  margin: 0;
+}
+
+.course-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.courses__paragraph,
+.courses_header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f7f0ea;
+  border-radius: 20px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  min-width: 0;
+}
+
+.form__fieldset-title {
+  font-family: "HirroSans";
+  font-size: 32px;
+  font-weight: bold;
+  color: #3c2d44;
+  margin: 0;
+}
+
+.form__inputs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "HirroSans";
+  font-size: 18px;
+  color: #3c2d44;
+}
+
+.form__input {
+  width: 100%;
+  min-width: 0;
+  min-height: 60px;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  font-family: "HirroSans";
+  font-size: 18px;
+  color: #3c2d44;
+  background-color: #fff;
+  border: 1px solid #d5cbd7;
+  border-radius: 30px;
+  transition: border-color 0.2s ease;
+}
+
+.form__input::placeholder {
+  color: #a49aa5;
+}
+
+.form__input:hover {
+  border-color: #8b7893;
+}
+
+.form__input:focus-visible {
+  outline: 2px solid #3c2d44;
+  outline-offset: 2px;
+}
+
+.form__button {
+  align-self: flex-end;
+  width: 300px;
+  min-height: 65px;
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-family: "HirroSans";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f7f0ea;
+  background-color: #3c2d44;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.form__button:hover {
+  background-color: #594460;
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+.header-footer {
+  font-size: 30px;
+}
+
+.footer__line {
+  font-family: "HirroSans";
+  font-size: 40px;
+  color: #3c2d44;
+}
+
+.footer__text {
+  font-family: "HirroSans";
+  font-size: 25px;
+  color: #3c2d44;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
 }

@@ -11,146 +11,217 @@
   </head>
   <body>
     <header>
-      <a class="link" href="#">
+      <a class="link logo-link" href="#">
         <img class="logo" src="./images/mif-prosto-logo.png" alt="Логотип" />
       </a>
       <h1 class="header">MifProsto</h1>
-      <a class="link" href="#">
-        <img alt="Ссылка ВК" src="./images/vk.png" class="social-media" />
-      </a>
-      <a class="link" href="#">
-        <img
-          alt="Ссылка Телеграм"
-          src="./images/Telegram_Messenger.png"
-          class="social-media"
-        />
-      </a>
-      <a class="link" href="#">
-        <img
-          alt="Ссылка Инстраграм"
-          src="./images/inst.png"
-          class="social-media"
-        />
-      </a>
+      <div class="social-medias">
+        <a class="link" href="#">
+          <img alt="Ссылка ВК" src="./images/vk.png" class="social-media" />
+        </a>
+        <a class="link" href="#">
+          <img
+            alt="Ссылка Телеграм"
+            src="./images/Telegram_Messenger.png"
+            class="social-media"
+          />
+        </a>
+        <a class="link" href="#">
+          <img
+            alt="Ссылка Инстраграм"
+            src="./images/inst.png"
+            class="social-media"
+          />
+        </a>
+      </div>
     </header>
-    <nav>
-      <a class="link link__country"> Греция </a>
-      <a class="link link__country"> Древний Египет </a>
-      <a class="link link__country"> Скандинавия </a>
-      <a class="link link__country"> Япония </a>
-      <a class="link link__country"> Китай </a>
-      <p class="link__country">|</p>
+    <nav class="nav">
+      <div class="links">
+        <a href="#" class="link link__country"> Греция </a>
+        <a href="#" class="link link__country"> Древний Египет </a>
+        <a href="#" class="link link__country"> Скандинавия </a>
+        <a href="#" class="link link__country"> Япония </a>
+        <a href="#" class="link link__country"> Китай </a>
+        <a class="link link__country"> Древняя Русь </a>
+      </div>
+      <p class="link__country separator">|</p>
       <a class="link">
         <img class="img__search" src="./images/search.png" />
       </a>
     </nav>
     <main>
       <section class="cover">
-      <img class="cover__image" src="./images/cover.jpg" />
-      <h2 class="cover__header">Мифы ближе, чем кажется</h2>
-   </section>
-   <section class="about">
-    <h2 class="about__header">О сайте</h2>
-    <p class="about__paragraph">МифПросто — это место, где вы можете узнать о самых разных мифах: от древних легенд до современных городских историй.</p>
-   </section>
-   <section class="last-articles">
-<ul class="last-articles__list">
-  <h2 class="last-articles__header">Последние статьи</h2>
-<li>
-<div>
-<img src="./images/article-amaterasu.png">
-<h4 class="last-articles__header">Аматэрасу</h4>
-<p class="last-articles__paragraph">верховная богиня солнца в японской мифологии</p>
-</div>
-</li>
-<li>
-  <div>
-  <img src="./images/article-persephone.png">
-<h4 class="last-articles__header">Персефона</h4>
-<p class="last-articles__paragraph">древнегреческая богиня плодородия</p>
-</div>
-</li>
-<li>
-  <div>
-  <img src="./images/article-ragnarok.jpg">
-<h4 class="last-articles__header">Рагнарёк</h4>
-<p class="last-articles__paragraph"> гибель богов и всего мира в германо-скандинавской мифологии</p>
-</div>
-</li>
-</ul>
-   </section>
-   <section class="courses">
-<div>
-<h2 class="courses__header">Записаться на курс</h2>
-<p class="courses__paragraph">Наши курсы подойдут всем, кто хочет узнать больше о мифах: от любопытных новичков до настоящих энтузиастов. У нас есть и детские курсы — в игровой форме!</p>
-</div>
-<div>
-  <ul class="courses__list">
-<li>
-  <img class="courses__image" src="./images/lecture-olympians.png">
-  <h3 class="courses__header">Олимпийские боги</h3>
-  <p class="courses__paragraph">Лекция о верховных божествах третьего поколения в древнегреческой мифологии, которые жили на священной горе Олимп</p>
-</li>
-<li>
-  <img class="courses__image" src="./images/lecture-yggdrasil.png">
-  <h3 class="courses__header">Иггдрасиль</h3>
-  <p class="courses__paragraph">Гигантский ясень из вселенной в скандинавской мифологии, какие тайны он хранит?</p>
-</li>
-<li>
-  <img class="courses__image" src="./images/lecture-yokai.png">
-  <h3 class="courses__header">Ёкаи</h3>
-  <p class="courses__paragraph">Духи из японской мифологии - как встретить их?</p>
-</li>
-  </ul>
-</div>
-<form class="form">
-          <fieldset class="form__fieldset">
-            <h2 class="form__fieldset-title">Ваши данные</h2>
-            <label class="form__label">
-              <input
-                type="text"
-                placeholder="Имя"
-                name="name"
-                class="search-form__textfield"
-              />
-            </label>
-                        <label class="form__label">
-              <input
-                type="text"
-                placeholder="Email"
-                name="email"
-                class="search-form__textfield"
-              />
-            </label>
-          </fieldset>
-        <button class="form__button">Записаться</button>  
-</form>
-   </section>
+        <div class="layout"></div>
+        <h2 class="cover__header">
+          Мифы <span class="accent-span">ближе</span>, чем кажется
+        </h2>
+      </section>
+      <section class="about">
+        <div class="about__text">
+          <h2 class="about__header">О нас</h2>
+          <p class="about__paragraph">
+            <span class="accent-span-about">МифПросто</span> — это место, где вы
+            можете узнать о самых разных мифах: от древних легенд до современных
+            городских историй.
+          </p>
+          <p class="about__paragraph">
+            На страницах МифПросто собраны истории со всего света: от
+            величественного Олимпа и загадочных египетских гробниц до японских
+            лесов, населённых духами и необычными существами. Мы стремимся
+            рассказывать о них простым и интересным языком, чтобы знакомство с
+            мифологией было доступно каждому, независимо от возраста и уровня
+            подготовки.
+          </p>
+        </div>
+        <img class="icon-column" src="./images/free-icon-column.png" />
+      </section>
+      <section class="last-articles">
+        <h2 class="last-articles__header">Последние статьи</h2>
+        <ul class="last-articles__list">
+          <li class="articles__list">
+            <a class="articles-list">
+              <div class="article-box article-japan">
+                <div class="layout"></div>
+                <h4 class="last-article__header">Аматэрасу</h4>
+                <p class="last-articles__paragraph">
+                  Что может заставить богиню солнца навсегда скрыться в пещере и
+                  погрузить мир во тьму? Узнайте, как хитрость богов и
+                  любопытство одного из них помогли вернуть свет на землю.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="articles__list">
+            <a class="articles-list">
+              <div class="article-box article-greece">
+                <div class="layout"></div>
+                <h4 class="last-article__header">Персефона</h4>
+                <p class="last-articles__paragraph">
+                  Как юная богиня весны стала царицей подземного царства?
+                  История Персефоны рассказывает о любви, разлуке и древнем
+                  объяснении смены времён года.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="articles__list">
+            <a class="articles-list">
+              <div class="article-box article-viking">
+                <div class="layout"></div>
+                <h4 class="last-article__header">Рагнарёк</h4>
+                <p class="last-articles__paragraph">
+                  Что произойдёт, когда мир погрузится в хаос, а даже великие
+                  боги не смогут избежать своей судьбы? Узнайте о пророчестве
+                  викингов, предвещающем гибель богов и рождение нового мира.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="courses">
+        <div class="courses-box">
+          <h2 class="courses__header">Записаться на лекцию</h2>
+          <p class="courses__paragraph">
+            Выберите интересующую вас тему лекции, а затем заполните форму ниже.
+          </p>
+          <ul class="cources__list">
+            <li class="cources__list-item">
+              <a class="card__cource" href="#">
+                <div class="card-course">
+                  <h3 class="courses_header">Олимпийские боги</h3>
+                  <img src="./images/olymp.png" alt="" class="course-icon" />
+                </div>
+              </a>
+            </li>
+            <li class="cources__list-item">
+              <a class="card__cource" href="#">
+                <div class="card-course">
+                  <h3 class="courses_header">Иггдрасиль</h3>
+                  <img src="./images/tree.png" alt="" class="course-icon" />
+                </div>
+              </a>
+            </li>
+            <li class="cources__list-item">
+              <a class="card__cource" href="#">
+                <div class="card-course">
+                  <h3 class="courses_header">Ёкаи</h3>
+                  <img src="./images/jap.png" alt="" class="course-icon" />
+                </div>
+              </a>
+            </li>
+          </ul>
+          <form class="form">
+            <fieldset class="form__fieldset">
+              <h2 class="form__fieldset-title">Ваши данные</h2>
+              <div class="form__inputs">
+                <label class="form__label" for="name">
+                  Ваше имя
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Имя"
+                    class="form__input"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+                <label class="form__label" for="email">
+                  Почта
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    class="form__input"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+                <label class="form__label" for="date">
+                  Дата лекции
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    class="form__input"
+                    required
+                  />
+                </label>
+              </div>
+            </fieldset>
+            <button type="submit" class="form__button">Записаться</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-            <a class="link" href="#">
+      <a class="link logo-link" href="#">
         <img class="logo" src="./images/mif-prosto-logo.png" alt="Логотип" />
       </a>
-      <h1 class="header">MifProsto</h1>
+      <h1 class="header header-footer">MifProsto</h1>
       <p class="footer__line">|</p>
       <p class="footer__text">Мифы. История. Знания.</p>
-      <a class="link" href="#">
-        <img alt="Ссылка ВК" src="./images/vk.png" class="social-media" />
-      </a>
-      <a class="link" href="#">
-        <img
-          alt="Ссылка Телеграм"
-          src="./images/Telegram_Messenger.png"
-          class="social-media"
-        />
-      </a>
-      <a class="link" href="#">
-        <img
-          alt="Ссылка Инстраграм"
-          src="./images/inst.png"
-          class="social-media"
-        />
-      </a>
+      <div class="social-medias">
+        <a class="link" href="#">
+          <img alt="Ссылка ВК" src="./images/vk.png" class="social-media" />
+        </a>
+        <a class="link" href="#">
+          <img
+            alt="Ссылка Телеграм"
+            src="./images/Telegram_Messenger.png"
+            class="social-media"
+          />
+        </a>
+        <a class="link" href="#">
+          <img
+            alt="Ссылка Инстраграм"
+            src="./images/inst.png"
+            class="social-media"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
